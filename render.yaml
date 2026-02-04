@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: ecommerce-item-api
+    env: java
+    buildCommand: mvn clean package
+    startCommand: java -jar target/item-api-0.0.1-SNAPSHOT.jar
