@@ -6,7 +6,6 @@ COPY pom.xml .
 COPY mvnw .
 COPY .mvn .mvn
 
-# 👇 THIS IS THE FIX
 RUN chmod +x mvnw
 
 RUN ./mvnw -B dependency:go-offline
